@@ -77,6 +77,26 @@ myForm.addField(new SelectFormField({
 myForm.fields.disableAll();
 ```
 
+### Enable all *fields*
+
+#### JavaScript
+
+```javascript
+myForm.fields.enableAll();
+```
+
+### *Disable* a single *button* after 5 seconds
+
+```javascript
+let submitButton;
+submitButton = myForm.addSubmitButton({
+  label: "Submit My Form",
+});
+setTimeout(function () {
+  submitButton.disable();
+}, 5000);
+```
+
 ## Examples
 
 ### Example 1.
