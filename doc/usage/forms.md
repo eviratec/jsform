@@ -4,11 +4,15 @@
 
 ### Create a Form
 
+#### HTML
+
 ```html
 <div>
   <form id="myForm"></form>
 </div>
 ```
+
+#### JavaScript
 
 ```javascript
 let formElementId = "myForm";
@@ -16,6 +20,8 @@ let myForm = new Form(formElementId);
 ```
 
 ### Add *onSubmit* callback
+
+#### JavaScript
 
 ```javascript
 myForm.onSubmit((ev, data) => {
@@ -25,7 +31,9 @@ myForm.onSubmit((ev, data) => {
 });
 ```
 
-### Add a submit button
+### Add a *submit* button
+
+#### JavaScript
 
 ```javascript
 myForm.addSubmitButton({
@@ -33,7 +41,9 @@ myForm.addSubmitButton({
 });
 ```
 
-### Add a text input form field
+### Add a *text input* field
+
+#### JavaScript
 
 ```javascript
 myForm.addField(new InputFormField({
@@ -43,7 +53,9 @@ myForm.addField(new InputFormField({
 }));
 ```
 
-### Add a select form field
+### Add a *select* field
+
+#### JavaScript
 
 ```javascript
 myForm.addField(new SelectFormField({
@@ -57,7 +69,9 @@ myForm.addField(new SelectFormField({
 }));
 ```
 
-### Disable all fields
+### Disable all *fields*
+
+#### JavaScript
 
 ```javascript
 myForm.fields.disableAll();
